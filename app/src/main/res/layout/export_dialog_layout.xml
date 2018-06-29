@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin">
+    
+
+    <TextView
+        android:text="@string/export_dialog_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView9"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:paddingTop="@dimen/medium_padding_view"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_export_path"
+        android:textAlignment="center"
+        android:textStyle="normal|italic"
+        android:textSize="14sp"
+        android:paddingTop="@dimen/small_padding_view"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_export_filename"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="text"
+            android:text="File name"/>
+
+        <TextView
+            android:id="@+id/export_filename_ext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:gravity="fill_vertical"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+
+</LinearLayout>

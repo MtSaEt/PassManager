@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    
+    <item android:id="@+id/action_search"
+          android:title="@string/toolbar_search"
+          android:icon="@drawable/ic_search_white_24dp"
+          android:enabled="true"
+          app:actionViewClass="android.support.v7.widget.SearchView"
+          app:showAsAction="always|collapseActionView" />
+    
+    <item android:title="@string/toolbar_sort_by"
+          android:id="@+id/sort_by"
+          android:icon="@drawable/ic_sort_white_24dp"
+          app:showAsAction="always">
+        <menu>
+            <group>
+                <item android:title="@string/toolbar_sort_name"
+                      android:id="@+id/sort_by_name"/>
+                <item android:title="@string/toolbar_sort_type"
+                      android:id="@+id/sort_by_type" />
+                <item android:title="@string/toolbar_sort_date"
+                      android:id="@+id/sort_by_date" />
+            </group>
+        </menu>
+    </item>
+    
+    <item android:title="@string/toolbar_settings"
+          android:id="@+id/settings" 
+        />
+    <item android:title="About"
+          android:id="@+id/about"
+        />
+
+</menu>

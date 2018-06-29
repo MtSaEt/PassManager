@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:autofit="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="125dp"
+              android:orientation="vertical"
+    >
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_margin="2dp"
+        android:clickable="true"
+        android:elevation="3dp">
+
+        <RelativeLayout
+            android:id="@+id/relative_cardview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/pwdType"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical|center_horizontal|center"
+                    android:layout_marginStart="@dimen/medium_padding_view"
+                    android:layout_weight="3.60"
+                    android:contentDescription="@string/content_desc_type"
+                    app:srcCompat="@drawable/custom_bg"/>
+
+
+                <ImageView
+                    android:id="@+id/selected"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/medium_padding_view"
+                    android:layout_weight="3.60"
+                    android:contentDescription="@string/card_selected"
+                    android:visibility="gone"
+                    app:srcCompat="@drawable/ic_check_circle_black_24dp"/>
+
+                <me.grantland.widget.AutofitTextView
+                    android:id="@+id/sourceName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/medium_padding_view"
+                    android:layout_marginRight="@dimen/medium_padding_view"
+                    android:layout_weight="1"
+                    android:clickable="false"
+                    android:gravity="center"
+                    android:maxLines="2"
+                    android:paddingBottom="@dimen/medium_padding_view"
+                    android:paddingTop="@dimen/medium_padding_view"
+                    android:textColor="#424242"
+                    android:textSize="32sp"
+                    autofit:minTextSize="16sp"/>
+
+                <ImageView
+                    android:id="@+id/moreSettings"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3.70"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:contentDescription="@string/content_desc_more"
+                    android:scaleType="center"
+                    app:srcCompat="@drawable/ic_keyboard_arrow_down_black_24dp"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_createdDate_left"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/medium_padding_view"
+                android:gravity="bottom"
+                android:paddingBottom="@dimen/small_padding_view"
+                android:textSize="12sp"/>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>

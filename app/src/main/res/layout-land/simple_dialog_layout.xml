@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/cardview_shadow_end_color"
+    android:animateLayoutChanges="true"
+    android:paddingBottom="8dp"
+    android:orientation="vertical"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentStart="true">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary">
+
+        <!--<ImageView
+           android:id="@+id/btn_cancel"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           android:padding="@dimen/medium_big_padding_view"
+           android:background="@drawable/ripple_effect_toolbar"
+           app:srcCompat="@drawable/ic_clear_white_24dp"/>
+           -->
+
+        <Button
+            android:text="@string/dialog_cancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/btn_cancel"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            android:textColor="@android:color/black"
+            style="@style/Widget.AppCompat.Button.Borderless" />
+        
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ic_https_black_24dp"
+            android:paddingBottom="24dp"
+            android:paddingTop="24dp"
+            android:contentDescription="@string/content_desc_lock_image"/>
+
+        <Button
+            android:text="@string/dialog_add"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/btn_add"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            android:textColor="@android:color/black"
+            android:stateListAnimator="@null"
+            style="@style/Widget.AppCompat.Button.Borderless"/>
+
+        
+
+        <!--<ImageView-->
+        <!--android:id="@+id/btn_add"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_weight="1"-->
+        <!--android:padding="@dimen/medium_big_padding_view"-->
+        <!--android:background="@drawable/ripple_effect_toolbar"-->
+        <!--app:srcCompat="@drawable/ic_done_white_24dp"/>-->
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center_vertical"
+                android:text="@string/content_desc_type"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"/>
+
+            <LinearLayout
+                android:id="@+id/linear_type_layout"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/border"
+                android:orientation="horizontal">
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin">
+
+        <TextView
+            android:id="@+id/type_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="fill_vertical"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"/>
+
+        <EditText
+            android:id="@+id/account_alias"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:maxLength="80"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textAlignment="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_username"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="fill_vertical"
+            android:text="@string/label_username_email"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"/>
+
+        <EditText
+            android:id="@+id/account_username"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ems="10"
+            android:labelFor="@id/textView15"
+            android:maxLength="80"
+            android:inputType="text"
+            android:textAlignment="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="fill_vertical"
+            android:text="@string/label_password"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"/>
+
+        <EditText
+            android:id="@+id/account_password"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ems="10"
+            android:maxLength="80"
+            android:inputType="textPassword"
+            android:textAlignment="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/activity_horizontal_margin">
+
+        <Button
+            android:text="@string/content_desc_gen_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/gene_pwd"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:background="@color/colorPrimary"/>
+
+        <CheckBox
+            android:id="@+id/show_password"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/show_password"/>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:diagonal="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_choice"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.anon.passmanager.activity.ChoiceActivity">
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:elevation="10dp"
+        android:textSize="24sp"
+        android:rotation="-30"
+        android:textColor="@color/white"
+        android:text="Choose your password type"/>
+
+    <RelativeLayout
+        android:id="@+id/relative_choice_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/pin_toggle"
+            android:layout_width="250dp"
+            android:layout_height="45dp"
+            android:layout_marginBottom="@dimen/medium_padding_view"
+            android:background="@color/colorAccent"
+            android:text="PIN"/>
+
+        <Button
+            android:id="@+id/pwd_toggle"
+            android:layout_width="250dp"
+            android:layout_height="45dp"
+            android:layout_below="@id/pin_toggle"
+            android:background="@color/colorAccent"
+            android:text="Password"
+            android:textAllCaps="false"/>
+    </RelativeLayout>
+
+    <developer.shivam.library.DiagonalView
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:layout_alignParentTop="true"
+        android:scaleType="centerCrop"
+        android:src="@color/colorPrimary"
+        diagonal:angle="30"
+        android:elevation="5dp"
+        diagonal:diagonalGravity="left|top" />
+
+    <developer.shivam.library.DiagonalView
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:layout_alignParentBottom="true"
+        android:scaleType="centerCrop"
+        android:scaleY="-1"
+        android:src="@color/colorPrimary"
+        diagonal:angle="30"
+        android:elevation="5dp"
+        diagonal:diagonalGravity="left" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:fabSize="normal"
+        app:rippleColor="@color/white"
+        app:elevation="10dp"
+        app:pressedTranslationZ="@dimen/medium_padding_view"
+        android:background="@drawable/ripple_effect"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="bottom|end" />
+</RelativeLayout>

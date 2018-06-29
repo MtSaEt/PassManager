@@ -1,0 +1,95 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="addPasswordTheme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowCloseOnTouchOutside">true</item>
+        <item name="android:displayOptions"></item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <!--Dark.ActionBar-->
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="PassManager" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:statusBarColor">#00796B</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="PassManager.LightTheme" parent="Theme.AppCompat.Light">
+        <item name="android:homeAsUpIndicator">@drawable/ic_arrow_back_white_24dp</item>
+        <item name="searchViewStyle">@style/SearchView</item>
+        <item name="actionOverflowButtonStyle">@style/ThreeDots.Light</item>
+        <item name="toolbarStyle">@style/ToolBarTheme</item>
+        <item name="popupMenuStyle">@style/PopupMenuLight</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="SearchView" parent="Widget.AppCompat.Light.SearchView">
+        <item name="searchHintIcon">@null</item>
+    </style>
+
+    <style name="ThreeDots.Light" parent="Widget.AppCompat.Light.ActionButton.Overflow">
+        <item name="android:src">@drawable/ic_more_vert_white_24dp</item>
+    </style>
+
+    <style name="ToolBarTheme" parent="Widget.AppCompat.Toolbar">
+        <item name="titleTextAppearance">@style/ToolbarTitleTextAppearanceLight</item>
+    </style>
+
+    <style name="PopupMenuLight" parent="Widget.AppCompat.PopupMenu">
+        <item name="android:popupBackground">@android:color/white</item>
+    </style>
+
+    <style name="ToolbarTitleTextAppearanceLight" parent="Base.TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="PassManager.Sliding.Light" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="content_background">@color/light_background</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="popup_theme">@style/ThemeOverlay.AppCompat.Light</item>
+    </style>
+    
+    <style name="aboutTheme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowCloseOnTouchOutside">true</item>
+        <item name="android:displayOptions"></item>
+    </style>
+    
+    <style name="menu_title_style">
+        <item name="android:background">@drawable/fab_label_background</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+</resources>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    <PreferenceCategory android:title="Fingerprint Authentification">
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="fingerprint_switch"
+            android:title="Allow Fingerprint Authentication"/>
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="PIN">
+        <Preference android:title="Modify your PIN"
+                    android:key="pin_modify">
+        </Preference>
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="Database">
+        <Preference
+            android:key="misc_import"
+            android:summary="Import passwords from an exported .csv file"
+            android:title="Import"
+            />
+        <!--
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.example.anon.passmanager"
+            android:targetClass="com.example.anon.passmanager.activity.AuthenticationActivity"/>
+            -->
+        <Preference
+            android:key="misc_export"
+            android:summary="Export all of your passwords to .csv"
+            android:title="Export"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Customization">
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="theme_preference"
+            android:title="Dark theme (in construction)"
+            android:summary="Activate the dark theme for better use at night"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Autocomplete">
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="username_completion"
+            android:title="Activate Username Autocompletion"
+            android:summary="Suggest all added usernames in the app add dialog."/>
+        <SwitchPreference
+            android:dependency="username_completion"
+            android:defaultValue="false"
+            android:key="ask_username_completion"
+            android:title="Ask before adding usernames"
+            android:summaryOn="Upon detecting an unknown username, it will prompt you whether you would like to add it or not."
+            android:summaryOff="It will automatically add any unknown user to the list."
+            android:drawableLeft="@drawable/ic_keyboard_return_black_24dp"/>
+    </PreferenceCategory>
+</PreferenceScreen>

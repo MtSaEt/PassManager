@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="24dp"
+    android:paddingRight="24dp"
+    android:paddingTop="@dimen/medium_padding_view"
+    android:paddingBottom="@dimen/medium_padding_view">
+
+    <TextView
+        android:text="@string/generation_settings_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:textSize="24sp"
+        android:padding="@dimen/medium_padding_view"
+        android:textColor="@android:color/black"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/small_padding_view">
+
+        <TextView
+            android:text="@string/lowercase_characters"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView17"
+            android:layout_weight="1"
+            android:textColor="@color/colorAccent"
+            />
+
+        <TextView
+            android:text="@string/uppercase_characters"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView5"
+            android:layout_weight="1"
+            android:textColor="@color/colorAccent"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <CheckBox
+            android:text="a-z"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cb_lowercase"
+            android:layout_weight="1"
+            android:checked="true"
+            />
+
+        <CheckBox
+            android:text="A-Z"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cb_uppercase"
+            android:layout_weight="1"
+            android:checked="true"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/small_padding_view">
+
+        <TextView
+            android:text="@string/numbers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView15"
+            android:layout_weight="1"
+            android:textColor="@color/colorAccent"
+            />
+
+        <TextView
+            android:text="@string/symbols"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView14"
+            android:layout_weight="1"
+            android:textColor="@color/colorAccent"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <CheckBox
+            android:text="0-9"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/cb_numbers"
+            android:layout_weight="1"
+            android:checked="true"/>
+
+        <CheckBox
+            android:text="*?$@!"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cb_symbols"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+</LinearLayout>
